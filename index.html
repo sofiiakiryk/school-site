@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Trading Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Bitcoin Trading Platform</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#buy">Купити Bitcoin</a></li>
+            <li><a href="#sell">Продати Bitcoin</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#contact">Контакт</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="section">
+      <div class="container">
+        <h2>Ласкаво просимо на нашу платформу торгівлі Bitcoin</h2>
+        <p>
+          Купуйте та продавайте Bitcoin безпечно та легко за допомогою нашої
+          платформи.
+        </p>
+      </div>
+    </section>
+    body { font-family: "Arial", sans-serif; margin: 0; padding: 0; } .container
+    { width: 80%; margin: 0 auto; } header { background-color: #333; color:
+    #fff; padding: 20px 0; text-align: center; } nav ul { list-style: none;
+    margin: 0; padding: 0; } nav li { display: inline-block; margin-right: 20px;
+    } nav a { text-decoration: none; color: #fff; font-weight: bold; font-size:
+    16px; transition: color 0.3s ease; } nav a:hover { color: #ffd700; }
+    .section { padding: 40px 0; text-align: center; } .section h2 { font-size:
+    36px; margin-bottom: 20px; } .footer { background-color: #333; color: #fff;
+    padding: 20px 0; text-align: center; } .phone-img { width: 500px; height:
+    500px; text-align: right; } .paragraph { overflow: hidden; text-align: left;
+    } .phone-img { float: left; margin-right: 20px; } .about-img { width: 500px;
+    height: 500px; text-align: right; float: left; margin-right: 20px; }
+    .sell-img { width: 600px; height: 500px; text-align: center; float: right;
+    margin-left: 40px; } .paragraph-sell { overflow: hidden; text-align: right;
+    } .btn-container { text-align: center; } .buy:hover { color: rgb(49, 48,
+    48); background-color: #fff; } .sell:hover { color: rgb(49, 48, 48);
+    background-color: #fff; } .exchange-rate:hover { color: rgb(49, 48, 48);
+    background-color: #fff; } .bitcoin { width: 100px; height: 100px; }
+    .bitcoin-text { text-align: center; } .buy { margin-right: 30px; }
+    .exchange-rate { margin-right: 30px; } .modal { display: none; position:
+    fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,
+    0, 0, 0.7); } .modal-content { background-color: #fff; margin: 15% auto;
+    padding: 20px; max-width: 600px; border-radius: 5px; position: relative; }
+    .close { position: absolute; top: 10px; right: 10px; font-size: 20px;
+    cursor: pointer; } #externalLink { text-align: center; margin-top: 20px; }
+    #externalLink img { width: 50px; height: 50px; } .phone { width: 500px;
+    height: 300px; } .abt { width: 500px; height: 500px; } .main-img { width:
+    400px; height: 400px; }
+
+    <div class="btn-container">
+      <button onclick="openModal('buyModal')" class="buy">
+        <img class="bitcoin" src="images/Bitcoin.png" alt="" />
+        <p class="bitcoin-text">Купити</p>
+      </button>
+      <button onclick="openModal('exchangeRateModal')" class="exchange-rate">
+        <img class="bitcoin" src="images/Bitcoin.png" alt="" />
+        <p class="bitcoin-text">Обмінний курс</p>
+      </button>
+      <button onclick="openModal('sellModal')" class="sell">
+        <img class="bitcoin" src="images/Bitcoin.png" alt="" />
+        <p class="bitcoin-text">Продати</p>
+      </button>
+    </div>
+
+    <section id="buy" class="section">
+      <div class="container">
+        <h2>Купівля Bitcoin</h2>
+        <div class="content-container">
+          <div class="image-container">
+            <img class="main-img" src="images/Bitcoin.png" alt="Buy Icon" />
+          </div>
+          <div class="text-container">
+            <p>
+              Купівля Bitcoin - це захоплюючий крок у світ криптовалют. Ми
+              пропонуємо надійні та зручні способи здійснення операцій з
+              Bitcoin.
+            </p>
+            <a href="https://посилання-на-інший-сайт.com" target="_blank"
+              >Дізнатися більше</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sell" class="section">
+      <div class="container">
+        <h2>Продаж Bitcoin</h2>
+        <div class="content-container">
+          <div class="image-container">
+            <img src="images/Selling-Bitcoin.png" alt="Sell Icon" />
+          </div>
+          <div class="text-container">
+            <p>
+              Продаж Bitcoin - простий та безпечний процес. Ознайомтесь із нашим
+              посібником та здійсніть успішні операції з продажу Bitcoin.
+            </p>
+            <a href="https://посилання-на-інший-сайт.com" target="_blank"
+              >Деталі тут</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Про нас</h2>
+        <div class="content-container">
+          <div class="image-container">
+            <img class="abt" src="images/abt.png" alt="About Us Icon" />
+          </div>
+          <div class="text-container">
+            <p>
+              Ми - команда експертів з криптовалют, присвячених наданню
+              найкращих послуг та консультацій.
+            </p>
+            <a href="https://посилання-на-інший-сайт.com" target="_blank"
+              >Більше інформації</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Контакт</h2>
+        <div class="content-container">
+          <div class="image-container">
+            <img class="phone" src="images/phone.jpg" alt="Contact Icon" />
+          </div>
+          <div class="text-container">
+            <p>
+              Зв'яжіться з нами, щоб отримати додаткову інформацію або вирішити
+              ваші питання.
+            </p>
+            <a href="https://посилання-на-інший-сайт.com" target="_blank"
+              >Напишіть нам</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Bitcoin Trading Platform. Усі права захищені.
+          <img src="images/Bitcoin.png" alt="" class="bitcoin" />
+        </p>
+      </div>
+    </footer>
+
+    <div id="buyModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('buyModal')">&times;</span>
+        <h2>Купівля Bitcoin</h2>
+      </div>
+    </div>
+
+    <div id="exchangeRateModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('exchangeRateModal')"
+          >&times;</span
+        >
+        <h2>Обмінний курс</h2>
+      </div>
+    </div>
+
+    <div id="sellModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('sellModal')">&times;</span>
+        <h2>Продаж Bitcoin</h2>
+      </div>
+    </div>
+
+    <section id="externalLink" class="section">
+      <div class="container">
+        <a href="https://посилання-на-інший-сайт.com" target="_blank">
+          <img src="images/external-link.png" alt="Посилання на інший сайт" />
+        </a>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
